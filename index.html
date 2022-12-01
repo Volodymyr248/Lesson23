@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Налаштування поведінки в'юпорта -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 23</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+			</header>
+			<main class="page">
+				<div> Урок: Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.</div>
+					<ul>
+						<li>Задача 1: Чи вірний запис?</li>
+						<li>let fls = "Фрилансер";
+							let text = `Привіт! Я ${fls}`
+							console.log(text);</li>
+						<li>Так, запис працює</li>
+							<li>-</li>
+						<li>Задача 2: Отримати символ "н"</li>
+						<li>let text = `Фрилансер`;
+							console.log(text[5]);
+							console.log(text.slice(5,6));</li>
+							<li>-</li>
+						<li>Задача 3: let text = 123 + "456";? Не вірно, додавання не змінює Тип "рядок" в число, відповідь 123456</li>
+						<li>-</li>
+						<li>Задача 4: Отримати рядок у верхньому регістрі </li>
+						<li>let text = `фрилансер`;
+							console.log(text.toUpperCase());</li>
+						<li>-</li>
+						<li>Задача 5: Отримати слайс "лан" </li>
+						<li>let text = `фрилансер`;
+							let subText = text.slice (3, 6);
+							console.log(subText);</li>
+						<li>-</li>
+						<li>Задача 6: let text = `фрилансер`;
+							console.log(text.includes('лан', 4)); </li>
+						<li>Не вірно, "лан" починається з позиції 3</li>
+					</ul>
+					<br>
+				<div> Урок: Числа в JAVASCRIPT. Тип данных number. Работа с числами. проблема неточных вычислений.</div>
+					<ul>
+						<li>Задача 1: Отримати вірне значення округлення:</li>
+						<li>let numTrue = 1.005 + Number.EPSILON;
+							let numOne = Math.round(numTrue * 100) / 100;
+							console.log(numOne);</li>
+						<li>-</li>
+						<li>Задача 2: Отримати число 135,58 з рядка.</li>
+						<li>let value = "135.58px";
+							console.log(parseFloat(value));</li>
+						<li>-</li>
+						<li>Задача 3: Побудувати вiрну умову </li>
+						<li>let value = 58 + "фрилансер";
+							if (isNaN(58 + "Фрилансер") == true) {
+								console.log(`Pезультат виразу NaN`);
+							}</li>
+						<li>-</li>
+						<li>Задача 4: Знайти максимальне число </li>
+						<li>let numMax = Math.max(10, 58, 39, -150, 0);
+							console.log(numMax);</li>
+						<li>-</li>
+						<li>Задача 5: Округлити 58,858 до 58 </li>
+						<li>let someNum = 58.858;
+							console.log(Math.floor(someNum));</li>
+					</ul>
+					<br>
+				<div> Урок: Операторы JAVASCRIPT. "2"+2=22</div>
+					<ul>
+						<li>Не вірні варіанти:</li>
+						<li>Варіант 1: результат 35-22</li>
+						<li>Варіант 3: інкремент працює тільки зі змінними</li>
+						<li>Варіант 4: дасть О, оскільки змінна usersCounter збільшилась на 1 уже після присвоєння</li>
+						<li>Варіант 5: дасть 11, це перше true в операції "або"</li>
+					</ul>
+					<br>
+				<div> Урок: IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE.</div>
+					<ul>
+						<li>Дасть варіант "Правда":</li>
+						<li>Варіант 2</li>
+						<li>Варіант 3</li>
+						<li>Варіант 4</li>
+					</ul>
+					<br>
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
